@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <title>Softtech-it - Let's Build Your Career</title>
+
+        <!-- favicon -->
+        <link
+            rel="icon"
+            href="assets/img/favicon.png"
+            sizes="20x20"
+            type="image/png"
+        />
+
+        <!-- Stylesheet Link -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- preloader area start -->
+        <div class="preloader" id="preloader">
+            <div class="preloader-inner">
+                <div class="spinner">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader area end -->
+        <!-- search Popup -->
+        <div class="body-overlay" id="body-overlay"></div>
+        <div class="search-popup" id="search-popup">
+            <form action="index.html" class="search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search....." />
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!--search Popup -->
+
+        <!-- Header  -->
+        <section id="header">
+            <div class="st_header">
+                <!--Hero Bg-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="st_menu-bar">
+                                <div class="st_brand">
+                                    <a href="index.html" class="st_brand__link">
+                                        <img
+                                            src="assets/img/logo.png"
+                                            alt="Softtech-it"
+                                            class="st_brand__img"
+                                        />
+                                    </a>
+                                    <span class="st_brand__icon-box">
+                                        <span class="st_brand__icon"></span>
+                                    </span>
+                                    <!--Menu Icon for Mobile-->
+                                </div>
+                                <!--logo-->
+                                <div class="st_menu">
+                                    <div class="st_menu__content">
+                                        <div class="st_menu__is">
+                                            <ul
+                                                class="st_nav st_nav--primary t-mb-50"
+                                            >
+                                                <li class="current-menu-item">
+                                                    <a href="index.html">
+                                                        home</a
+                                                    >
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a href="about.html">about us</a>
+                                                    <ul class="st-sub-menu">
+                                                        <li class="st-sub-menu__item">
+                                                            <a href="#" class="st-sub-menu__link">about company</a>
+                                                        </li>
+                                                        <li><a href="#">about trainer</a></li>
+                                                        <li class="st-sub-menu__item">
+                                                            <a href="#" class="st-sub-menu__link">about environment</a>
+                                                        </li>
+                                                        <li><a href="#">about facility</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="menu-item-has-children"
+                                                >
+                                                    <a href="#">courses</a>
+                                                    <ul
+                                                        class="sub-menu st-mega-menu-container"
+                                                    >
+                                                        <li
+                                                            class="st-mega-menu"
+                                                        >
+                                                            <span
+                                                                class="st-mega-menu__title"
+                                                            >
+                                                                UI/UX Design
+                                                                Traning
+                                                            </span>
+                                                            <ul
+                                                                class="st-mega-menu__list"
+                                                            >
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-1 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-layers"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Pro.Graphic
+                                                                                    Design
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-2 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-App"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Ad.Graphic
+                                                                                    Design
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-3 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-ui"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    UI/UX
+                                                                                    Design
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des st-saas-menu__product-des-new"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-4 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-motion-graphics"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Motion
+                                                                                    Graphic
+                                                                                    Design
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li
+                                                            class="st-mega-menu"
+                                                        >
+                                                            <span
+                                                                class="st-mega-menu__title"
+                                                            >
+                                                                Web & Software
+                                                                Traning
+                                                            </span>
+                                                            <ul
+                                                                class="st-mega-menu__list"
+                                                            >
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-4 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-js-format"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    javaScript
+                                                                                    Development
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-3 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-App"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Responsive
+                                                                                    Web
+                                                                                    Design
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des st-saas-menu__product-des-new"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-2 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-Custom-WP"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Web
+                                                                                    Development
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-1 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-clock"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Python
+                                                                                    Development
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li
+                                                            class="st-mega-menu"
+                                                        >
+                                                            <span
+                                                                class="st-mega-menu__title"
+                                                            >
+                                                                Digital
+                                                                Marketing Taning
+                                                            </span>
+                                                            <ul
+                                                                class="st-mega-menu__list"
+                                                            >
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-1 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-layers"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Digital
+                                                                                    Marketing
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-2 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-App"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    SEO
+                                                                                    &
+                                                                                    Affiliate
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item"
+                                                                >
+                                                                    <a
+                                                                        href="course-details.html"
+                                                                        class="st-mega-menu__link"
+                                                                    >
+                                                                        <span
+                                                                            class="st-saas-menu"
+                                                                        >
+                                                                            <span
+                                                                                class="st-saas-menu__icon st-saas-menu__icon-3 t-mr-16"
+                                                                            >
+                                                                                <span
+                                                                                    class="icon-laptop"
+                                                                                ></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="st-saas-menu__product"
+                                                                            >
+                                                                                <span
+                                                                                    class="st-saas-menu__product-name"
+                                                                                >
+                                                                                    Social
+                                                                                    Media
+                                                                                    Marketing
+                                                                                </span>
+                                                                                <span
+                                                                                    class="st-saas-menu__product-des"
+                                                                                >
+                                                                                    Project
+                                                                                    Based
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li
+                                                                    class="st-mega-menu__list-item t-pt-10 text-left"
+                                                                >
+                                                                    <button
+                                                                        class="st-btn-link st-btn-link--tertiary st-btn st-btn--secondary st-btn-short-round"
+                                                                    >
+                                                                        view all
+                                                                        project
+                                                                        <span
+                                                                            class="st-btn-icon"
+                                                                        >
+                                                                            <span
+                                                                                class="fas fa-long-arrow-alt-right"
+                                                                            ></span>
+                                                                        </span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="admission.html">admission</a>
+                                                </li>
+                                                <li>
+                                                    <a href="gallery.html">gallery</a>
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html"
+                                                        >contact</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog.html">blog</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="st-search">
+                                                            <span class="fas fa-search"></span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="st_menu__close"></div>
+                                </div>
+                                <!--menu-->
+                            </div>
+                            <!--menu-bar-->
+                        </div>
+                        <div class="col-md-7 col-lg-6 col-xl-7 t-top-hero">
+                            <h1 class="st_hero-title t-mb-40">
+                                Soft Tech-IT institute in Dhaka, Bangladesh.
+                            </h1>
+                            <span class="st_hero-subtitle t-mb-40">
+                                We nurture the young talents by sharing of
+                                Projects, Helping Startups get their business
+                                up.
+                            </span>
+                            <div class="st-btn-group">
+                                <a
+                                    href="#"
+                                    class="st-btn-link st-btn-link--primary st-btn--primary st-btn-rounded st-btn t-mr-35 mb-3 mb-sm-0"
+                                >
+                                    register now
+                                    <span class="st-btn-icon">
+                                        <span
+                                            class="fas fa-long-arrow-alt-right"
+                                        ></span>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="st-btn-link st-btn-link--secondary st-btn"
+                                >
+                                    join facebook
+                                    <span class="st-btn-icon">
+                                        <span
+                                            class="fas fa-long-arrow-alt-right"
+                                        ></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header Section End -->
+
+        <!-- back to top area start -->
+        <div class="back-to-top">
+            <span class="back-to-top__icon"
+                ><i class="fas fa-long-arrow-alt-up"></i
+            ></span>
+        </div>
+        <!-- back to top area end -->
+        <!-- jquery -->
+        <script src="assets/js/jquery.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Slick Slider  -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- Magnific popup -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Lax -->
+        <script src="//cdn.jsdelivr.net/npm/lax.js"></script>
+        <!-- Nice Select  -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- Main script -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
