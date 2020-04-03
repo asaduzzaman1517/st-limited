@@ -1,0 +1,14 @@
+.st-hero {
+    &-title-top {
+        display: block;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500;
+    }
+    &-subtitle {
+        display: block;
+        @include xli-screen {
+            width: 70%;
+        }
+    }
+}
