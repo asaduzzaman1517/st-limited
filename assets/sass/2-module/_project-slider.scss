@@ -1,0 +1,52 @@
+.project-slider {
+    &__item {
+        @include sm-screen {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        @include xxl-screen {
+            opacity: .5;
+        }
+        &:focus {
+            outline: none ;
+        }
+    }
+    
+    &__text {
+        display: block;
+        font-size: 20px;
+        font-family: $heading-font;
+        text-transform: capitalize;
+    }
+    &__icon {
+        display: inline-block;
+        margin-left: 5px;
+        padding: 10px;
+        border-radius: 3px;
+        
+        line-height: 1;
+        transition: all .3s ease;
+        &:hover {
+            background: $secondary;
+            color: $white;
+        }
+    }
+    @include xxl-screen {
+        .slick-active+.slick-active {
+            opacity: 1;
+        }
+        .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+            opacity: .5;
+        }
+    }
+    .slick-dots li.slick-active button:before {
+        color: transparent;
+        opacity: 1;
+        content: "";
+        background: $secondary;
+        height: 5px;
+        border-radius: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

@@ -3,6 +3,50 @@
 
 	$(document).ready(function() {
 		/**-----------------------------
+		 *  Project slider
+		 * ---------------------------*/
+		let projectSlider = $('.project-slider');
+		if(projectSlider.length) {
+			projectSlider.slick({
+				mobileFirst: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 575,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 1199,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 1600,
+						settings: {
+							slidesToShow: 5,
+							slidesToScroll: 1,
+							dots: true
+						}
+					}
+				]
+			});
+		}
+		/**-----------------------------
 		 *  Navbar fix
 		 * ---------------------------*/
 

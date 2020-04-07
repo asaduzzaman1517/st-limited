@@ -1,0 +1,53 @@
+.team-card {
+	&__img-container {
+        position: relative;
+        &:hover {
+            .team-card__icon {
+                opacity: 1;
+            }
+        }
+	}
+	&__img {
+		-webkit-clip-path: polygon(
+			50% 0%,
+			100% 25%,
+			100% 75%,
+			50% 100%,
+			0% 75%,
+			0% 25%
+		);
+		clip-path: polygon(
+			50% 0%,
+			100% 25%,
+			100% 75%,
+			50% 100%,
+			0% 75%,
+			0% 25%
+		);
+	}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		right: 5px;
+        transform: translateY(-50%);
+        transition: all .3s ease;
+        opacity: 0;
+        .st-social__icon {
+            color: $white !important;
+            border: 1px solid white;
+            &-fb {
+                background: $fb;
+            }
+            &-tw {
+                background: $tw;
+            }
+            &-ins {
+                background: $ins;
+            }
+        }
+    }
+    &__des {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}

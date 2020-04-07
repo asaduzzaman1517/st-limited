@@ -21772,6 +21772,265 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       text-decoration: none; }
 
 /*---------------------------------------
+    2.18 Project Slider
+-----------------------------------------*/
+@media screen and (min-width: 576px) {
+  .project-slider__item {
+    margin-left: 15px;
+    margin-right: 15px; } }
+
+@media screen and (min-width: 1920px) {
+  .project-slider__item {
+    opacity: .5; } }
+
+.project-slider__item:focus {
+  outline: none; }
+
+.project-slider__text {
+  display: block;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize; }
+
+.project-slider__icon {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 3px;
+  line-height: 1;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .project-slider__icon:hover {
+    background: #ff6550;
+    color: #fff; }
+
+@media screen and (min-width: 1920px) {
+  .project-slider .slick-active + .slick-active {
+    opacity: 1; }
+  .project-slider .slick-active + .slick-active + .slick-active + .slick-active + .slick-active {
+    opacity: .5; } }
+
+.project-slider .slick-dots li.slick-active button:before {
+  color: transparent;
+  opacity: 1;
+  content: "";
+  background: #ff6550;
+  height: 5px;
+  border-radius: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/*---------------------------------------
+    2.19 Course Card
+-----------------------------------------*/
+.st-course-card {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 40px 30px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .st-course-card:hover {
+    -webkit-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.09);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  .st-course-card--1 {
+    background-color: #e4fcff; }
+    .st-course-card--1::before {
+      content: "01";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #65eeff;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card--2 {
+    background-color: #f6eaff; }
+    .st-course-card--2::before {
+      content: "02";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #bf6bff;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card--3 {
+    background-color: #e2ffed; }
+    .st-course-card--3::before {
+      content: "03";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #63ff9e;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card--4 {
+    background-color: #ffe9e9; }
+    .st-course-card--4::before {
+      content: "04";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #ff6a6a;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card--5 {
+    background-color: #ffecee; }
+    .st-course-card--5::before {
+      content: "05";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #ff6d7c;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card--6 {
+    background-color: #e5f1ff; }
+    .st-course-card--6::before {
+      content: "06";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #66acff;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card--7 {
+    background-color: #ffebfd; }
+    .st-course-card--7::before {
+      content: "07";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #ff6cf0;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card--8 {
+    background-color: #ffe1ff; }
+    .st-course-card--8::before {
+      content: "08";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 48px;
+      font-family: "Oswald", sans-serif;
+      -webkit-text-stroke: 1px #ff62ff;
+      -webkit-text-fill-color: transparent; }
+  .st-course-card__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 48px;
+    line-height: 1; }
+    .st-course-card__icon--1 {
+      background-image: -webkit-linear-gradient(129deg, #165ffd, #36e5f5);
+      background-image: -o-linear-gradient(129deg, #165ffd, #36e5f5);
+      background-image: linear-gradient(-39deg, #165ffd, #36e5f5); }
+    .st-course-card__icon--2 {
+      background-image: -webkit-linear-gradient(129deg, #ec36dd, #d4a6fc);
+      background-image: -o-linear-gradient(129deg, #ec36dd, #d4a6fc);
+      background-image: linear-gradient(-39deg, #ec36dd, #d4a6fc); }
+    .st-course-card__icon--3 {
+      background-image: -webkit-linear-gradient(129deg, #00c4bb, #00dc3f);
+      background-image: -o-linear-gradient(129deg, #00c4bb, #00dc3f);
+      background-image: linear-gradient(-39deg, #00c4bb, #00dc3f); }
+    .st-course-card__icon--4 {
+      background-image: -webkit-linear-gradient(129deg, #f3646d, #f9ce0f);
+      background-image: -o-linear-gradient(129deg, #f3646d, #f9ce0f);
+      background-image: linear-gradient(-39deg, #f3646d, #f9ce0f); }
+    .st-course-card__icon--5 {
+      background-image: -webkit-linear-gradient(129deg, #ff142c, #ff5f72);
+      background-image: -o-linear-gradient(129deg, #ff142c, #ff5f72);
+      background-image: linear-gradient(-39deg, #ff142c, #ff5f72); }
+    .st-course-card__icon--6 {
+      background-image: -webkit-linear-gradient(129deg, #2494ff, #a971ff);
+      background-image: -o-linear-gradient(129deg, #2494ff, #a971ff);
+      background-image: linear-gradient(-39deg, #2494ff, #a971ff); }
+    .st-course-card__icon--7 {
+      background-image: -webkit-linear-gradient(129deg, #ff26eb, #ff73f2);
+      background-image: -o-linear-gradient(129deg, #ff26eb, #ff73f2);
+      background-image: linear-gradient(-39deg, #ff26eb, #ff73f2); }
+    .st-course-card__icon--8 {
+      background-image: -webkit-linear-gradient(129deg, #e235ed, #fe9f61);
+      background-image: -o-linear-gradient(129deg, #e235ed, #fe9f61);
+      background-image: linear-gradient(-39deg, #e235ed, #fe9f61); }
+  .st-course-card__title {
+    display: block;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #121053;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .st-course-card__title:hover {
+      color: #121053;
+      text-decoration: none; }
+
+/*---------------------------------------
+    2.20 Team Card
+-----------------------------------------*/
+.team-card__img-container {
+  position: relative; }
+  .team-card__img-container:hover .team-card__icon {
+    opacity: 1; }
+
+.team-card__img {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+
+.team-card__icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: 0; }
+  .team-card__icon .st-social__icon {
+    color: #fff !important;
+    border: 1px solid white; }
+    .team-card__icon .st-social__icon-fb {
+      background: #3b5998; }
+    .team-card__icon .st-social__icon-tw {
+      background: #1da1f2; }
+    .team-card__icon .st-social__icon-ins {
+      background: #f56040; }
+
+.team-card__des {
+  font-size: 12px;
+  font-weight: 500; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -21801,6 +22060,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*---------------------------------------
     3.3 Margin
 -----------------------------------------*/
+.t-mt-15 {
+  margin-top: 15px; }
+
 .t-mt-30 {
   margin-top: 30px; }
 
