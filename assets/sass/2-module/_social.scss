@@ -1,0 +1,82 @@
+//Social Link
+.st-social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    &__item {
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        display: inline-block;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__icon {
+        color: $white;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        &-fb {
+            &:hover {
+                color: $fb;
+            }
+        }
+        &-tw {
+            &:hover {
+                color: $tw;
+            }
+        }
+        &-ins {
+            &:hover {
+                color: $ins;
+            }
+        }
+        &-in {
+            &:hover {
+                color: $in;
+            }
+        }
+
+    }
+    &--footer {
+        .st-social__icon {
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid $text-icon;
+            border-radius: 50%;
+            color: $text-icon;
+            font-size: 14px;
+            line-height: 1;
+            transition: all 0.3s ease;
+            &-fb:hover {
+                background: $fb;
+                border: 1px solid $fb;
+            }
+            &-tw:hover {
+                background: $tw;
+                border: 1px solid $tw;
+            }
+            &-ins:hover {
+                background: $ins;
+                border: 1px solid $ins;
+            }
+            &-in:hover {
+                background: $in;
+                border: 1px solid $in;
+            }
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

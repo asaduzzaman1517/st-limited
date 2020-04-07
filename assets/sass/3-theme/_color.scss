@@ -2,3 +2,11 @@
 .t-text-light {
     color: $white;
 }
+.t-link {
+    color: $heading-text;
+    transition: all .3s ease;
+    &:hover {
+        color: $heading-text;
+        text-decoration: none;
+    }
+}

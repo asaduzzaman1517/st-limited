@@ -1,0 +1,27 @@
+.icon-nav {
+	display: flex;
+	align-items: center;
+	&__img {
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+	}
+	&__text {
+		position: relative;
+		font-size: 20px;
+		line-height: 1;
+		font-weight: 700;
+		text-transform: capitalize;
+		@include sm-screen {
+			&::after {
+                content: "\f30b";
+                font-family: $line-icon-free;
+                line-height: 1;
+				position: absolute;
+                top: 50%;
+                left: calc(100% + 10px);
+                transform: translateY(-50%);
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.custom-list-group {
+
+    .list-group-item {
+        z-index: 2;
+        color: #343a40;
+        background-color: white;
+        border-color: #00000000;
+        box-shadow: 0 5px 15px rgba($black, .2);
+        transition: all .3s ease;
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+    .list-group-item.active {
+        z-index: 2;
+        color: $secondary;
+        background-color: white;
+        border-color: #00000000;
+        box-shadow: 0 5px 15px rgba($black, .2);
+    }
+}
