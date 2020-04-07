@@ -59,6 +59,18 @@
 			background: $secondary;
 		}
 	}
+	&--tertiary {
+		padding-top: 13px;
+		padding-bottom: 13px;
+		padding-left: 22px;
+		padding-right: 22px;
+		background: $custom-34;
+		color: $white;
+		&:hover {
+			box-shadow: 0 5px 25px rgba($black, 0.2);
+			color: $white;
+		}
+	}
 	&--outline {
 		padding-top: 13px;
 		padding-bottom: 13px;
@@ -114,7 +126,7 @@
 	&-rounded {
 		border-radius: 50px;
 	}
-	&-short-round {
+	&-sm-round {
 		border-radius: 5px;
 	}
 	&-group {

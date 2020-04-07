@@ -12,7 +12,7 @@
 		line-height: 1;
 		font-weight: 700;
 		text-transform: capitalize;
-		@include sm-screen {
+		@include xl-screen {
 			&::after {
                 content: "\f30b";
                 font-family: $line-icon-free;

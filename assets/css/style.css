@@ -21438,6 +21438,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       color: #fff;
       background: #ff6550; }
+  .st-btn--tertiary {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background: #0434d1;
+    color: #fff; }
+    .st-btn--tertiary:hover {
+      -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      color: #fff; }
   .st-btn--outline {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -21478,7 +21489,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin-left: 5px; }
   .st-btn-rounded {
     border-radius: 50px; }
-  .st-btn-short-round {
+  .st-btn-sm-round {
     border-radius: 5px; }
   .st-btn-group {
     display: -webkit-box;
@@ -21679,7 +21690,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     line-height: 1;
     font-weight: 700;
     text-transform: capitalize; }
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: 1200px) {
       .icon-nav__text::after {
         content: "\f30b";
         font-family: "Line Awesome Free";
@@ -21721,8 +21732,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     2.16 Service
 -----------------------------------------*/
 .service-card {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1); }
   .service-card__head {
     position: relative; }
     .service-card__head-icon {
@@ -21738,6 +21749,29 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     text-transform: capitalize; }
 
 /*---------------------------------------
+    2.17 Check list
+-----------------------------------------*/
+.st-check-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .st-check-list__list {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 25px; }
+    .st-check-list__list::before {
+      content: '\f00c';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      position: absolute;
+      left: 0; }
+  .st-check-list__link {
+    color: #121053; }
+    .st-check-list__link:hover {
+      color: #121053;
+      text-decoration: none; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -21745,6 +21779,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 -----------------------------------------*/
 .t-bg-light {
   background: #fff !important; }
+
+.t-bg-btn {
+  background: #0434d1; }
 
 /*---------------------------------------
     3.2 Color
@@ -21776,6 +21813,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-mb-30 {
   margin-bottom: 30px; }
 
+.t-mb-50 {
+  margin-bottom: 50px; }
+
 .t-mr-15 {
   margin-right: 15px; }
 
@@ -21791,6 +21831,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-pt-10 {
   padding-top: 10px; }
 
+.t-pt-30 {
+  padding-top: 30px; }
+
 .t-pt-50 {
   padding-top: 50px; }
 
@@ -21799,5 +21842,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-pt-100 {
   padding-top: 100px; }
+
+.t-pt-120 {
+  padding-top: 120px; }
+
+.t-pb-120 {
+  padding-bottom: 120px; }
 
 /*# sourceMappingURL=style.css.map */
