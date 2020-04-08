@@ -3,6 +3,32 @@
 
 	$(document).ready(function() {
 		/**-----------------------------
+		 *  Feedback slider
+		 * ---------------------------*/
+		let feedbackSlider = $('.feedback-slider');
+		if(feedbackSlider.length) {
+			feedbackSlider.slick({
+				mobileFirst: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+						}
+					},
+					{
+						breakpoint: 1600,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1,
+						}
+					}
+				]
+			});
+		}
+		/**-----------------------------
 		 *  Project slider
 		 * ---------------------------*/
 		let projectSlider = $('.project-slider');
