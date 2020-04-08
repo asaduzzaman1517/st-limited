@@ -1,0 +1,54 @@
+.award-slider {
+    &__item {
+        position: relative;
+        &:focus {
+            outline: none;
+        }
+    }
+    &-nav {
+        &__item {
+            &:focus {
+                outline: none;
+            }
+        }
+        .slick-arrow {
+            width: 40px;
+            height: 40px;
+            top: auto;
+            bottom: -50px;
+            transform: translate(0, 0);
+            border: 1px solid $text;
+            border-radius: 3px;
+            transition: all .3s ease;
+            &:before {
+                color: $text;
+            }
+            &:hover {
+                border: 1px solid $secondary;
+                background: $secondary;
+                &:before {
+                    color: $white;
+                }
+            }
+        }
+        .slick-next {
+            right: auto;
+            left: 80px;
+        }
+        .slick-prev {
+            right: auto;
+            left: 0;
+        }
+        .slick-next::before {
+            content: '\f061';
+            font-family: $line-icon-free;
+            font-weight: 900;
+            
+        }
+        .slick-prev::before {
+            content: '\f060';
+            font-family: $line-icon-free;
+            font-weight: 900;
+        }
+    }
+}

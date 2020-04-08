@@ -3,6 +3,99 @@
 
 	$(document).ready(function() {
 		/**-----------------------------
+		 *  Award Slider
+		 * ---------------------------*/
+		let awardFor = $(".award-slider");
+		if(awardFor.length) {
+			awardFor.slick({
+				mobileFirst: true,
+				arrows: false,
+				asNavFor: ".award-slider-nav"
+			});
+		}
+		let awardNav = $(".award-slider-nav");
+		if(awardNav.length) {
+			awardNav.slick({
+				mobileFirst: true,
+				asNavFor: ".award-slider"
+			});
+		}
+		/**-----------------------------
+		 *  Video Play Popup
+		 * ---------------------------*/
+		let playOne = $(".video-play--1");
+		if (playOne.length) {
+			playOne.magnificPopup({
+				items: {
+					src: "https://www.youtube.com/watch?v=kshIWIc15yg"
+				},
+				type: "iframe",
+				iframe: {
+					markup:
+						'<div class="mfp-iframe-scaler">' +
+						'<div class="mfp-close"></div>' +
+						'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+						"</div>",
+					patterns: {
+						youtube: {
+							index: "youtube.com/",
+							id: "v=",
+							src: "//www.youtube.com/embed/kshIWIc15yg"
+						}
+					},
+					srcAction: "iframe_src"
+				}
+			});
+		}
+		let playTwo = $(".video-play--2");
+		if (playTwo.length) {
+			playTwo.magnificPopup({
+				items: {
+					src: "https://www.youtube.com/watch?v=kshIWIc15yg"
+				},
+				type: "iframe",
+				iframe: {
+					markup:
+						'<div class="mfp-iframe-scaler">' +
+						'<div class="mfp-close"></div>' +
+						'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+						"</div>",
+					patterns: {
+						youtube: {
+							index: "youtube.com/",
+							id: "v=",
+							src: "//www.youtube.com/embed/kshIWIc15yg"
+						}
+					},
+					srcAction: "iframe_src"
+				}
+			});
+		}
+		let playThree = $(".video-play--3");
+		if (playThree.length) {
+			playThree.magnificPopup({
+				items: {
+					src: "https://www.youtube.com/watch?v=kshIWIc15yg"
+				},
+				type: "iframe",
+				iframe: {
+					markup:
+						'<div class="mfp-iframe-scaler">' +
+						'<div class="mfp-close"></div>' +
+						'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+						"</div>",
+					patterns: {
+						youtube: {
+							index: "youtube.com/",
+							id: "v=",
+							src: "//www.youtube.com/embed/kshIWIc15yg"
+						}
+					},
+					srcAction: "iframe_src"
+				}
+			});
+		}
+		/**-----------------------------
 		 *  Feedback slider
 		 * ---------------------------*/
 		let feedbackSlider = $('.feedback-slider');

@@ -1,0 +1,20 @@
+.subs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &__input {
+        width: 60%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 15px;
+        border: none;
+        box-shadow: 0 10px 20px rgba($black, .1);
+        background: $white;
+        font-size: 14px;
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+}
