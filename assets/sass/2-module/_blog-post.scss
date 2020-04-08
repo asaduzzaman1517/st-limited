@@ -1,0 +1,14 @@
+.blog-post {
+    transition: all .3s ease;
+    &:hover {
+        .blog-post__img {
+            box-shadow: 0 10px 25px rgba($black, .1);
+        }
+    }
+    &__img {
+        transition: all .3s ease;
+    }
+    &__tag {
+        font-size: 12px;
+    }
+}

@@ -22339,6 +22339,23 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       font-size: 14px; }
 
 /*---------------------------------------
+    2.28 Blog Post
+-----------------------------------------*/
+.blog-post {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .blog-post:hover .blog-post__img {
+    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
+  .blog-post__img {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  .blog-post__tag {
+    font-size: 12px; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -22368,6 +22385,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*---------------------------------------
     3.3 Margin
 -----------------------------------------*/
+.t-mt-10 {
+  margin-top: 10px; }
+
 .t-mt-15 {
   margin-top: 15px; }
 
