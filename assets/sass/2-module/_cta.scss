@@ -1,0 +1,22 @@
+.cta {
+    border-radius: 5px;
+    background-image: url(../img/cta-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include xl-screen {
+        margin-bottom: -120px;
+    }
+    &__content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include md-screen {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @include xl-screen {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}

@@ -22356,6 +22356,30 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-size: 12px; }
 
 /*---------------------------------------
+    2.29 CTA
+-----------------------------------------*/
+.cta {
+  border-radius: 5px;
+  background-image: url(../img/cta-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media screen and (min-width: 1200px) {
+    .cta {
+      margin-bottom: -120px; } }
+  .cta__content {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    @media screen and (min-width: 768px) {
+      .cta__content {
+        padding-left: 30px;
+        padding-right: 30px; } }
+    @media screen and (min-width: 1200px) {
+      .cta__content {
+        padding-left: 50px;
+        padding-right: 50px; } }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
