@@ -1,0 +1,43 @@
+.instructor-msg {
+    &__text {
+        margin-bottom: 40px;
+        background: $light-bg;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+        &::after {
+            content: "\f10e";
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            font-family: $icon;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1;
+            color: rgba($heading-text, 0.1);
+        }
+        &::before {
+            content: "";
+            border-left: 0px solid transparent;
+            border-right: 43px solid transparent;
+            border-top: 34px solid $light-bg;
+            position: absolute;
+            bottom: -34px;
+            left: 107px;
+            @include sm-screen {
+                left: 200px;
+            }
+            @include md-screen {
+                left: 280px;
+            }
+            @include lg-screen {
+                left: 80px;
+            }
+            @include xl-screen {
+                left: 110px;
+            }
+        }
+    }
+}

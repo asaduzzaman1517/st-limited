@@ -22777,6 +22777,81 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     outline: none; }
 
 /*---------------------------------------
+    2.40 Instructor Message
+-----------------------------------------*/
+.instructor-msg__text {
+  margin-bottom: 40px;
+  background: #efeff9;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative; }
+  .instructor-msg__text::after {
+    content: "\f10e";
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(18, 16, 83, 0.1); }
+  .instructor-msg__text::before {
+    content: "";
+    border-left: 0px solid transparent;
+    border-right: 43px solid transparent;
+    border-top: 34px solid #efeff9;
+    position: absolute;
+    bottom: -34px;
+    left: 107px; }
+    @media screen and (min-width: 576px) {
+      .instructor-msg__text::before {
+        left: 200px; } }
+    @media screen and (min-width: 768px) {
+      .instructor-msg__text::before {
+        left: 280px; } }
+    @media screen and (min-width: 992px) {
+      .instructor-msg__text::before {
+        left: 80px; } }
+    @media screen and (min-width: 1200px) {
+      .instructor-msg__text::before {
+        left: 110px; } }
+
+/*---------------------------------------
+    2.41 Event author
+-----------------------------------------*/
+.st-event-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .st-event-author__img {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+    margin-right: 16px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .st-event-author__info {
+    color: #121053; }
+  .st-event-author__name {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize; }
+  .st-event-author__designation {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
