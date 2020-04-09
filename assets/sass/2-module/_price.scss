@@ -1,0 +1,117 @@
+.st-price {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	position: relative;
+	transition: all 0.3s ease;
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: 0  5px 15px rgba($black, .2);
+	}
+	&--regular {
+		background: $custom-43;
+		border: 1px solid darken($custom-43, 8%);
+		border-radius: 5px;
+	}
+	&--popular {
+		background-image: linear-gradient(
+			-39deg,
+			rgba($custom-44, 1),
+			rgba($custom-3, 1)
+		);
+		border: 1px solid rgba($custom-2, 0.01);
+		border-radius: 5px;
+		z-index: 9999;
+		@include md-screen {
+			transform: scale(1.04);
+		}
+		&:hover {
+			transform: translateY(-2px) scale(1.04);
+			box-shadow: 0  5px 10px rgba($black, .2);
+		}
+		.st-price__head-title {
+			color: $white;
+		}
+		.st-price__tag-sale {
+			color: $white;
+			&::before {
+				color: $white;
+			}
+		}
+		.st-course-module__link:hover {
+			color: $white;
+		}
+	}
+	&__head {
+		&-title {
+			display: block;
+			font-size: 36px;
+			line-height: 1;
+			font-weight: 700;
+			color: $heading-text;
+			text-transform: capitalize;
+			@include xl-screen {
+				font-size: 18px;
+			}
+			@include xliv-screen {
+				font-size: 36px;
+			}
+		}
+	}
+	&__tag {
+		&-regular {
+			position: relative;
+			font-size: 24px;
+			line-height: 1;
+			font-weight: 500;
+			color: $text-light;
+			&::before {
+				content: "";
+				width: 100%;
+				height: 2px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background: rgba($secondary, 1);
+			}
+		}
+		&-sale {
+			position: relative;
+			font-size: 48px;
+			line-height: 1;
+			font-weight: 700;
+			@include xl-screen {
+				font-size: 36px;
+			}
+			@include xliv-screen {
+				font-size: 48px;
+			}
+			&::before {
+				content: "BDT";
+				position: absolute;
+				bottom: 12px;
+				left: 100%;
+				font-size: 12px;
+			}
+		}
+	}
+	&__body {
+		.st-course-module__list {
+			padding-left: 25px;
+		}
+		.st-course-module__list::before {
+			left: 0;
+			color: $secondary;
+			
+        }
+        .st-course-module__list--cross {
+            &::before {
+                content: "\f00d" !important;
+                font-family: $icon;
+                font-weight: 700;
+                position: absolute;
+            }
+        }
+	}
+}

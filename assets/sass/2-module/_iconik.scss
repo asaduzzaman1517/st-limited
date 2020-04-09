@@ -1,0 +1,41 @@
+.iconik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        color: $white;
+        &--1 {
+            background-image: linear-gradient(-39deg, $custom-3, $custom-2);
+        }
+        &--2 {
+            background-image: linear-gradient(-39deg, $custom-6, $custom-5);
+        }
+        &--3 {
+            background-image: linear-gradient(-39deg, $custom-9, $custom-8);
+        }
+        &--4 {
+            background-image: linear-gradient(-39deg, $custom-11, $custom-12);
+        }
+        &--5 {
+            background-image: linear-gradient(-39deg, $custom-15, $custom-14);
+        }
+        &--6 {
+            background-image: linear-gradient(-39deg, $custom-18, $custom-17);
+        }
+        &--7 {
+            background-image: linear-gradient(-39deg, $custom-24, $custom-23);
+        }
+    }
+    &__title {
+        text-transform: capitalize;
+        color: $heading-text;
+        font-weight: 700;
+    }
+}

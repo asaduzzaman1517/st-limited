@@ -21694,7 +21694,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     overflow: hidden; }
   .icon-nav__text {
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
     font-weight: 700;
     text-transform: capitalize; }
@@ -22998,6 +22998,212 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     border: 1px solid #ced4da !important; }
   .st-comments__form .nice-select:active, .st-comments__form .nice-select.open, .st-comments__form .nice-select:focus {
     border-color: #ff6550 !important; }
+
+/*---------------------------------------
+    2.45 Tuts
+-----------------------------------------*/
+.st-tuts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .st-tuts__info {
+    margin-right: 16px;
+    font-weight: 700;
+    text-transform: capitalize; }
+  .st-tuts__details {
+    text-transform: capitalize; }
+  .st-tuts-feature {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .st-tuts-feature__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+
+/*---------------------------------------
+    2.46 Iconik
+-----------------------------------------*/
+.iconik {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .iconik__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #fff; }
+    .iconik__icon--1 {
+      background-image: -webkit-linear-gradient(129deg, #165ffd, #36e5f5);
+      background-image: -o-linear-gradient(129deg, #165ffd, #36e5f5);
+      background-image: linear-gradient(-39deg, #165ffd, #36e5f5); }
+    .iconik__icon--2 {
+      background-image: -webkit-linear-gradient(129deg, #ec36dd, #d4a6fc);
+      background-image: -o-linear-gradient(129deg, #ec36dd, #d4a6fc);
+      background-image: linear-gradient(-39deg, #ec36dd, #d4a6fc); }
+    .iconik__icon--3 {
+      background-image: -webkit-linear-gradient(129deg, #00c4bb, #00dc3f);
+      background-image: -o-linear-gradient(129deg, #00c4bb, #00dc3f);
+      background-image: linear-gradient(-39deg, #00c4bb, #00dc3f); }
+    .iconik__icon--4 {
+      background-image: -webkit-linear-gradient(129deg, #f3646d, #f9ce0f);
+      background-image: -o-linear-gradient(129deg, #f3646d, #f9ce0f);
+      background-image: linear-gradient(-39deg, #f3646d, #f9ce0f); }
+    .iconik__icon--5 {
+      background-image: -webkit-linear-gradient(129deg, #ff142c, #ff5f72);
+      background-image: -o-linear-gradient(129deg, #ff142c, #ff5f72);
+      background-image: linear-gradient(-39deg, #ff142c, #ff5f72); }
+    .iconik__icon--6 {
+      background-image: -webkit-linear-gradient(129deg, #2494ff, #a971ff);
+      background-image: -o-linear-gradient(129deg, #2494ff, #a971ff);
+      background-image: linear-gradient(-39deg, #2494ff, #a971ff); }
+    .iconik__icon--7 {
+      background-image: -webkit-linear-gradient(129deg, #e235ed, #fe9f61);
+      background-image: -o-linear-gradient(129deg, #e235ed, #fe9f61);
+      background-image: linear-gradient(-39deg, #e235ed, #fe9f61); }
+  .iconik__title {
+    text-transform: capitalize;
+    color: #121053;
+    font-weight: 700; }
+
+/*---------------------------------------
+    2.47 price
+-----------------------------------------*/
+.st-price {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .st-price:hover {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+  .st-price--regular {
+    background: #f6f9ff;
+    border: 1px solid #cddeff;
+    border-radius: 5px; }
+  .st-price--popular {
+    background-image: -webkit-linear-gradient(129deg, #4236f5, #165ffd);
+    background-image: -o-linear-gradient(129deg, #4236f5, #165ffd);
+    background-image: linear-gradient(-39deg, #4236f5, #165ffd);
+    border: 1px solid rgba(54, 229, 245, 0.01);
+    border-radius: 5px;
+    z-index: 9999; }
+    @media screen and (min-width: 768px) {
+      .st-price--popular {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        transform: scale(1.04); } }
+    .st-price--popular:hover {
+      -webkit-transform: translateY(-2px) scale(1.04);
+      -ms-transform: translateY(-2px) scale(1.04);
+      transform: translateY(-2px) scale(1.04);
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+    .st-price--popular .st-price__head-title {
+      color: #fff; }
+    .st-price--popular .st-price__tag-sale {
+      color: #fff; }
+      .st-price--popular .st-price__tag-sale::before {
+        color: #fff; }
+    .st-price--popular .st-course-module__link:hover {
+      color: #fff; }
+  .st-price__head-title {
+    display: block;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: #121053;
+    text-transform: capitalize; }
+    @media screen and (min-width: 1200px) {
+      .st-price__head-title {
+        font-size: 18px; } }
+    @media screen and (min-width: 1600px) {
+      .st-price__head-title {
+        font-size: 36px; } }
+  .st-price__tag-regular {
+    position: relative;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    color: #bababa; }
+    .st-price__tag-regular::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: #ff6550; }
+  .st-price__tag-sale {
+    position: relative;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700; }
+    @media screen and (min-width: 1200px) {
+      .st-price__tag-sale {
+        font-size: 36px; } }
+    @media screen and (min-width: 1600px) {
+      .st-price__tag-sale {
+        font-size: 48px; } }
+    .st-price__tag-sale::before {
+      content: "BDT";
+      position: absolute;
+      bottom: 12px;
+      left: 100%;
+      font-size: 12px; }
+  .st-price__body .st-course-module__list {
+    padding-left: 25px; }
+  .st-price__body .st-course-module__list::before {
+    left: 0;
+    color: #ff6550; }
+  .st-price__body .st-course-module__list--cross::before {
+    content: "\f00d" !important;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    position: absolute; }
+
+/*---------------------------------------
+    2.48 Table
+-----------------------------------------*/
+.st-course-table thead {
+  background: #a4d3ff; }
+
+.st-course-table td {
+  color: #121053; }
+
+.st-course-table th {
+  color: #121053; }
 
 /*---------------------------------------
     0.3 Theme Style
