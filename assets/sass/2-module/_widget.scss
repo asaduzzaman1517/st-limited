@@ -1,0 +1,21 @@
+.st-widget {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $light-bg-2;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        line-height: 1;
+        text-transform: capitalize;
+    }
+    &--light {
+        background: $white;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__video {
+        position: relative;
+    }
+}

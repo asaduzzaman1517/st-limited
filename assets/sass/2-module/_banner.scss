@@ -1,0 +1,20 @@
+.st-banner {
+    position: relative;
+    &__bg {
+        background-image: url(../img/banner-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__title {
+        display: inline-block;
+        position: relative;
+        color: $white;
+        text-transform: capitalize;
+        z-index: 1;
+    }
+    &__content {
+        padding-top: 60px;
+        padding-bottom: 200px;
+    }
+}

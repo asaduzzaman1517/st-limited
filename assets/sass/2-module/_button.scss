@@ -84,6 +84,15 @@
 			border: 2px solid $secondary;
 		}
 	}
+	&--slim {
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		padding-left: 22px;
+		padding-right: 22px;
+		background: $secondary;
+		text-transform: capitalize;
+		line-height: 1;
+	}
 	&-link {
 		display: inline-block;
 		font-weight: 500;
@@ -94,7 +103,7 @@
 			text-transform: capitalize;
 			color: $white;
 			&:hover {
-				color: white;
+				color: white !important;
 			}
 		}
 

@@ -1,0 +1,29 @@
+.st-tag {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    &__link {
+        display: inline-block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        color: rgba($heading-text, .7);
+        border: 1px solid rgba($heading-text, .5);
+        font-size: 13px;
+        text-transform: capitalize;
+        transition: all .3s ease;
+        &:hover {
+            text-decoration: none;
+            color: $white;
+            border: 1px solid $secondary;
+            background: $secondary;
+        }
+    }
+}

@@ -2,6 +2,20 @@
 	"use strict";
 
 	$(document).ready(function() {
+		//BLog Slider
+		var blogSlide = $(".st-blog__img-slider");
+		if (blogSlide.length) {
+			blogSlide.slick({
+				mobileFirst: true,
+				slidesToShow: 1,
+				slideToScroll: 1,
+				fade: true,
+				prevArrow:
+					'<i class="fas fa-arrow-left blog-arrow blog-arrow-prev"></i>',
+				nextArrow:
+					'<i class="fas fa-arrow-right blog-arrow blog-arrow-next"></i>'
+			});
+		}
 		/**-----------------------------
 		 *  Award Slider
 		 * ---------------------------*/
