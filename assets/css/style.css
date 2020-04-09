@@ -22852,6 +22852,154 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     text-transform: capitalize; }
 
 /*---------------------------------------
+    2.42 Course Module
+-----------------------------------------*/
+.st-course-module {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .st-course-module__list {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 25px; }
+    .st-course-module__list::before {
+      content: '\f00c';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      position: absolute;
+      left: 0; }
+  .st-course-module__link {
+    color: #121053; }
+    .st-course-module__link:hover {
+      color: #121053;
+      text-decoration: none; }
+
+/*---------------------------------------
+    2.43 Related Post
+-----------------------------------------*/
+.st-related-post {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .st-related-post:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+  .st-related-post__body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  .st-related-post__title {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .st-related-post__link {
+    color: #121053;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .st-related-post__link:hover {
+      text-decoration: none;
+      color: #ff6550; }
+
+/*---------------------------------------
+    2.44 Comments
+-----------------------------------------*/
+.st-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .st-comments__author {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 16px; }
+    @media screen and (min-width: 768px) {
+      .st-comments__author {
+        margin-right: 30px; } }
+    .st-comments__author-img {
+      border-radius: 50%; }
+  .st-comments__info {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .st-comments__title {
+    text-transform: capitalize; }
+    .st-comments__title-link {
+      color: #121053; }
+      .st-comments__title-link:hover {
+        text-decoration: none;
+        color: #121053; }
+  .st-comments__children {
+    margin-top: 20px;
+    margin-bottom: 0;
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+    list-style: none; }
+    @media screen and (min-width: 768px) {
+      .st-comments__children {
+        -webkit-padding-start: 100px;
+        padding-inline-start: 100px; } }
+    .st-comments__children .st-comments__author {
+      width: 60px;
+      min-width: 60px;
+      height: 60px;
+      margin-right: 30px; }
+  .st-comments-list {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .st-comments-list > li {
+      margin-bottom: 20px; }
+  .st-comments-title {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize; }
+  .st-comments-form {
+    margin-top: 60px; }
+  .st-comments__form textarea {
+    resize: none; }
+    .st-comments__form textarea:focus {
+      outline: none !important;
+      border-color: #ff6550;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .st-comments__form input:focus {
+    outline: none !important;
+    border-color: #ff6550;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .st-comments__form .form-control {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1; }
+    .st-comments__form .form-control::-webkit-input-placeholder {
+      font-size: 14px; }
+    .st-comments__form .form-control:-ms-input-placeholder {
+      font-size: 14px; }
+    .st-comments__form .form-control::-ms-input-placeholder {
+      font-size: 14px; }
+    .st-comments__form .form-control::placeholder {
+      font-size: 14px; }
+  .st-comments__form .nice-select {
+    border: 1px solid #ced4da !important; }
+  .st-comments__form .nice-select:active, .st-comments__form .nice-select.open, .st-comments__form .nice-select:focus {
+    border-color: #ff6550 !important; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
