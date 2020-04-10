@@ -1,0 +1,59 @@
+.nav-box {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    &--about {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -60px;
+        z-index: 1;
+    }
+    &__link {
+        display: inline-block;
+        min-width: 50px;
+        min-height: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 1px solid rgba($white, .5);
+        background: $custom-33;
+        color: $white;
+        transition: all .3s ease;
+        &.active {
+            background: $secondary;
+        }
+        &:hover {
+            background: $secondary;
+            text-decoration: none;
+            color: $white;
+        }
+        @include iphn-screen {
+            min-width: 120px;
+            min-height: 120px;
+        }
+        @include md-screen {
+            border-radius: 3px;
+        }
+        @include lg-screen {
+            border: transparent;
+        }
+    }
+    &__item {
+        @include md-screen {
+            margin-right: 15px;
+        }
+        
+    }
+    &__icon {
+        display: block;
+        font-size: 28px;
+        
+        @include md-screen {
+            margin-bottom: 10px;
+        }
+    }
+}

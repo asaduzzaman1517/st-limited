@@ -23206,6 +23206,92 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   color: #121053; }
 
 /*---------------------------------------
+    2.49 Nav Box
+-----------------------------------------*/
+.nav-box {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .nav-box--about {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -60px;
+    z-index: 1; }
+  .nav-box__link {
+    display: inline-block;
+    min-width: 50px;
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #0026a3;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .nav-box__link.active {
+      background: #ff6550; }
+    .nav-box__link:hover {
+      background: #ff6550;
+      text-decoration: none;
+      color: #fff; }
+    @media screen and (min-width: 375px) {
+      .nav-box__link {
+        min-width: 120px;
+        min-height: 120px; } }
+    @media screen and (min-width: 768px) {
+      .nav-box__link {
+        border-radius: 3px; } }
+    @media screen and (min-width: 992px) {
+      .nav-box__link {
+        border: transparent; } }
+  @media screen and (min-width: 768px) {
+    .nav-box__item {
+      margin-right: 15px; } }
+  .nav-box__icon {
+    display: block;
+    font-size: 28px; }
+    @media screen and (min-width: 768px) {
+      .nav-box__icon {
+        margin-bottom: 10px; } }
+
+/*---------------------------------------
+    2.50 Blockquote
+-----------------------------------------*/
+.st-blockquote {
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #ff6550;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500; }
+  .st-blockquote-icon::before {
+    content: '\f10d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    opacity: .2;
+    font-size: 48px; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -23279,6 +23365,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 -----------------------------------------*/
 .t-pt-10 {
   padding-top: 10px; }
+
+.t-pt-20 {
+  padding-top: 20px; }
 
 .t-pt-30 {
   padding-top: 30px; }

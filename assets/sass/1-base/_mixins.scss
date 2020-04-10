@@ -13,6 +13,12 @@
     }
 }
 
+//Small Screen (min-width: 375)
+@mixin iphn-screen {
+    @media screen and (min-width: 375px) {
+        @content;
+    }
+}
 //Small Screen (min-width: 576)
 @mixin sm-screen {
     @media screen and (min-width: 576px) {
