@@ -1,0 +1,16 @@
+.career-card {
+    box-shadow: 0 5px 15px rgba($black , .2);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease;
+    @include sm-screen {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &:hover {
+        border-bottom: 2px solid $secondary;
+    }
+}

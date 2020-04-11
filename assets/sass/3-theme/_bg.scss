@@ -5,4 +5,33 @@
 }
 .t-bg-btn {
     background: $custom-34;
+    &-1 {
+        background: rgba($custom-2, .15);
+        color: $custom-2;
+        &:hover {
+            color: $custom-2;
+        }
+        
+    }
+    &-2 {
+        background: rgba($custom-44, .15);
+        color: $custom-44;
+        &:hover {
+            color: $custom-44;
+        }
+    }
+    &-3 {
+        background: rgba($custom-26, .15);
+        color: $custom-26;
+        &:hover {
+            color: $custom-26;
+        }
+    }
+    &-4 {
+        background: rgba($custom-11, .15);
+        color: $custom-11;
+        &:hover {
+            color: $custom-11;
+        }
+    }
 }

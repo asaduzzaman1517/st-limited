@@ -21468,6 +21468,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background: #ff6550;
     text-transform: capitalize;
     line-height: 1; }
+  .st-btn--sm {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 1; }
   .st-btn-link {
     display: inline-block;
     font-weight: 500; }
@@ -23292,6 +23300,27 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-size: 48px; }
 
 /*---------------------------------------
+    2.51 Career Card
+-----------------------------------------*/
+.career-card {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  @media screen and (min-width: 576px) {
+    .career-card {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  .career-card:hover {
+    border-bottom: 2px solid #ff6550; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -23302,6 +23331,26 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-bg-btn {
   background: #0434d1; }
+  .t-bg-btn-1 {
+    background: rgba(54, 229, 245, 0.15);
+    color: #36e5f5; }
+    .t-bg-btn-1:hover {
+      color: #36e5f5; }
+  .t-bg-btn-2 {
+    background: rgba(66, 54, 245, 0.15);
+    color: #4236f5; }
+    .t-bg-btn-2:hover {
+      color: #4236f5; }
+  .t-bg-btn-3 {
+    background: rgba(251, 177, 87, 0.15);
+    color: #fbb157; }
+    .t-bg-btn-3:hover {
+      color: #fbb157; }
+  .t-bg-btn-4 {
+    background: rgba(243, 100, 109, 0.15);
+    color: #f3646d; }
+    .t-bg-btn-4:hover {
+      color: #f3646d; }
 
 /*---------------------------------------
     3.2 Color
@@ -23318,6 +23367,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     color: #121053;
     text-decoration: none; }
 
+.t-text-primary {
+  color: #ff6550; }
+
 /*---------------------------------------
     3.3 Margin
 -----------------------------------------*/
@@ -23330,8 +23382,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-mt-18 {
   margin-top: 18px; }
 
+.t-mt-20 {
+  margin-top: 20px; }
+
 .t-mt-30 {
   margin-top: 30px; }
+
+.t-mb-5 {
+  margin-bottom: 5px; }
 
 .t-mb-10 {
   margin-bottom: 10px; }

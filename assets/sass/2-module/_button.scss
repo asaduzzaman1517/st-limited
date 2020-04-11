@@ -93,6 +93,15 @@
 		text-transform: capitalize;
 		line-height: 1;
 	}
+	&--sm {
+		padding-top: 5px ;
+		padding-bottom: 5px ;
+		padding-left: 22px;
+		padding-right: 22px;
+		font-size: 14px;
+		text-transform: capitalize;
+		line-height: 1;
+	}
 	&-link {
 		display: inline-block;
 		font-weight: 500;
