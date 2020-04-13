@@ -23343,6 +23343,88 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     border-bottom: 2px solid #ff6550; }
 
 /*---------------------------------------
+    2.52 Contact
+-----------------------------------------*/
+.st-contact {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    .st-contact {
+      padding-bottom: 60px; } }
+  .st-contact__form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff; }
+    @media screen and (min-width: 768px) {
+      .st-contact__form {
+        padding-left: 30px;
+        padding-right: 30px;
+        -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); } }
+  .st-contact__bg {
+    position: absolute; }
+    @media screen and (min-width: 992px) {
+      .st-contact__bg {
+        top: 200px;
+        left: -180px; } }
+    @media screen and (min-width: 1200px) {
+      .st-contact__bg {
+        left: -140px; } }
+    @media screen and (min-width: 1366px) {
+      .st-contact__bg {
+        left: -55px; } }
+    @media screen and (min-width: 1600px) {
+      .st-contact__bg {
+        left: 16px; } }
+    @media screen and (min-width: 1920px) {
+      .st-contact__bg {
+        left: 120px; } }
+  .st-contact__bg-1 {
+    position: absolute; }
+    @media screen and (min-width: 992px) {
+      .st-contact__bg-1 {
+        top: 200px;
+        left: -190px; } }
+    @media screen and (min-width: 1200px) {
+      .st-contact__bg-1 {
+        left: -80px; } }
+    @media screen and (min-width: 1366px) {
+      .st-contact__bg-1 {
+        left: -24px; } }
+    @media screen and (min-width: 1366px) {
+      .st-contact__bg-1 {
+        left: 55px; } }
+    @media screen and (min-width: 1920px) {
+      .st-contact__bg-1 {
+        left: 180px;
+        -webkit-animation: animateX 10s linear infinite;
+        animation: animateX 10s linear infinite; } }
+
+@-webkit-keyframes animateX {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes animateX {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
