@@ -23002,12 +23002,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     resize: none; }
     .st-comments__form textarea:focus {
       outline: none !important;
-      border-color: #ff6550;
+      border-color: #00dc3f;
       -webkit-box-shadow: none;
       box-shadow: none; }
   .st-comments__form input:focus {
     outline: none !important;
-    border-color: #ff6550;
+    border-color: #00dc3f;
     -webkit-box-shadow: none;
     box-shadow: none; }
   .st-comments__form .form-control {
@@ -23027,7 +23027,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .st-comments__form .nice-select {
     border: 1px solid #ced4da !important; }
   .st-comments__form .nice-select:active, .st-comments__form .nice-select.open, .st-comments__form .nice-select:focus {
-    border-color: #ff6550 !important; }
+    border-color: #00dc3f !important; }
 
 /*---------------------------------------
     2.45 Tuts
@@ -23389,13 +23389,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         left: -190px; } }
     @media screen and (min-width: 1200px) {
       .st-contact__bg-1 {
-        left: -80px; } }
+        left: -70px; } }
     @media screen and (min-width: 1366px) {
       .st-contact__bg-1 {
         left: -24px; } }
     @media screen and (min-width: 1366px) {
       .st-contact__bg-1 {
-        left: 55px; } }
+        left: 25px; } }
     @media screen and (min-width: 1920px) {
       .st-contact__bg-1 {
         left: 180px;

@@ -67,14 +67,14 @@
             resize: none;
             &:focus {
                 outline: none !important;
-                border-color: $secondary;
+                border-color: $custom-8;
                 box-shadow: none;
             }
         }
         input {
             &:focus {
                 outline: none !important;
-                border-color: $secondary;
+                border-color: $custom-8;
                 box-shadow: none;
             }
         }
@@ -92,7 +92,7 @@
             border: 1px solid #ced4da !important;
         }
         .nice-select:active, .nice-select.open, .nice-select:focus {
-            border-color: $secondary !important;
+            border-color: $custom-8 !important;
         }
     }
 }
