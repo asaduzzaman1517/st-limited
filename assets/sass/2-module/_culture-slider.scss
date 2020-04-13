@@ -1,0 +1,22 @@
+.culture-slider {
+    position: relative;
+    &__for {
+        &-item {
+            display: block;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__nav {
+        padding-top: 15px;
+        &-item {
+            display: block;
+            margin-left: 8px;
+            margin-right: 8px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

@@ -23425,6 +23425,24 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     transform: translateX(0); } }
 
 /*---------------------------------------
+    2.53 Culture Slider
+-----------------------------------------*/
+.culture-slider {
+  position: relative; }
+  .culture-slider__for-item {
+    display: block; }
+    .culture-slider__for-item:focus {
+      outline: none; }
+  .culture-slider__nav {
+    padding-top: 15px; }
+    .culture-slider__nav-item {
+      display: block;
+      margin-left: 8px;
+      margin-right: 8px; }
+      .culture-slider__nav-item:focus {
+        outline: none; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
