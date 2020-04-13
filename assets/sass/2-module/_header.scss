@@ -15,7 +15,7 @@
 		height: 100%;
 		width: 100%;
 		position: relative;
-		background: rgba($black, .2);
+		background: rgba($black, 0.2);
 	}
 	&__bottom {
 		width: 100%;
@@ -23,5 +23,28 @@
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+	&__img {
+		position: absolute;
+		top: 80px;
+		right: 40px;
+		width: 650px;
+		@include xli-screen {
+			width: 700px;
+		}
+		@include xlii-screen {
+			width: 740px;
+		}
+		@include xliv-screen {
+			width: 850px;
+		}
+		@include xlv-screen {
+			width: 890px;
+		}
+		@include xxl-screen {
+			width: 950px;
+			top: 60px;
+			right: 80px;
+		}
 	}
 }

@@ -20794,6 +20794,28 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
+  .st_header__img {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    width: 650px; }
+    @media screen and (min-width: 1366px) {
+      .st_header__img {
+        width: 700px; } }
+    @media screen and (min-width: 1400px) {
+      .st_header__img {
+        width: 740px; } }
+    @media screen and (min-width: 1600px) {
+      .st_header__img {
+        width: 850px; } }
+    @media screen and (min-width: 1680px) {
+      .st_header__img {
+        width: 890px; } }
+    @media screen and (min-width: 1920px) {
+      .st_header__img {
+        width: 950px;
+        top: 60px;
+        right: 80px; } }
 
 /*---------------------------------------
     2.4 Menu Bar
@@ -23441,6 +23463,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-pt-120 {
   padding-top: 120px; }
+
+@media screen and (min-width: 1920px) {
+  .t-pt-xxl-150 {
+    padding-top: 150px; } }
 
 .t-pb-60 {
   padding-bottom: 60px; }

@@ -20,6 +20,11 @@
 .t-pt-120 {
     padding-top: 120px;
 }
+.t-pt-xxl-150 {
+    @include xxl-screen {
+        padding-top: 150px;
+    }
+}
 //Padding Bottom
 .t-pb-60 {
     padding-bottom: 60px;
