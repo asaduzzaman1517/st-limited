@@ -21498,6 +21498,22 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-size: 14px;
     text-transform: capitalize;
     line-height: 1; }
+  .st-btn--circle {
+    display: inline-block;
+    border: 1px solid #121053;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    color: #121053; }
+    .st-btn--circle:hover {
+      color: #fff;
+      background: #ff6550;
+      border: 1px solid #ff6550; }
   .st-btn-link {
     display: inline-block;
     font-weight: 500; }
@@ -23441,6 +23457,52 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       margin-right: 8px; }
       .culture-slider__nav-item:focus {
         outline: none; }
+
+/*---------------------------------------
+    2.54 Project Cars
+-----------------------------------------*/
+.project-card {
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  overflow: hidden; }
+  .project-card:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+    .project-card:hover::before {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  .project-card::before {
+    content: '\f055';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    background: rgba(255, 101, 80, 0.7);
+    font-family: "Line Awesome Free";
+    font-size: 60px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 900;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer; }
+  .project-card__link {
+    display: block; }
 
 /*---------------------------------------
     0.3 Theme Style

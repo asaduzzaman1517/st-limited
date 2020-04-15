@@ -102,6 +102,22 @@
 		text-transform: capitalize;
 		line-height: 1;
 	}
+	&--circle {
+		display: inline-block;
+		border: 1px solid $text;
+		transition: all 0.3s ease;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-radius: 3px;
+		color: $text;
+		&:hover {
+			color: $white;
+			background: $secondary;
+			border: 1px solid $secondary;
+		}
+	}
 	&-link {
 		display: inline-block;
 		font-weight: 500;
