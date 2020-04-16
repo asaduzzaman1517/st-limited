@@ -15,6 +15,20 @@
             padding-right: 30px;
             box-shadow: 0 8px 15px rgba($black, .1);
         }
+        &-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            &-link {
+                color: $text;
+                transition: all .3s ease;
+                &:hover {
+                    color: $secondary;
+                    text-decoration: none;
+                }
+            }
+        }
     }
     &__bg {
         position: absolute;

@@ -23379,6 +23379,23 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         padding-right: 30px;
         -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); } }
+    .st-contact__form-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .st-contact__form-group-link {
+        color: #121053;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease; }
+        .st-contact__form-group-link:hover {
+          color: #ff6550;
+          text-decoration: none; }
   .st-contact__bg {
     position: absolute; }
     @media screen and (min-width: 992px) {
