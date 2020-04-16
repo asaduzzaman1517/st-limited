@@ -23610,6 +23610,151 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background: linear-gradient(#fff, #b1dbff) !important; }
 
 /*---------------------------------------
+    2.57 Course Info
+-----------------------------------------*/
+.st-course-info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .st-course-info .list-group-item {
+    display: inline-block;
+    background-color: #efeff9;
+    border: 1px solid #e8e8f6; }
+  .st-course-info .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .st-course-info .list-group-item:last-child {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .st-course-info .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #f6f6fc; }
+
+/*---------------------------------------
+    2.58 Syllabus
+-----------------------------------------*/
+.st-syllabus {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .st-syllabus__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .st-syllabus__list:nth-child(even) {
+      background: #f6f9ff; }
+  .st-syllabus__link {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #121053;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .st-syllabus__link:hover {
+      color: #121053;
+      text-decoration: none; }
+  .st-syllabus__icon {
+    margin-right: 15px; }
+  .st-syllabus__title {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #121053; }
+    @media screen and (min-width: 768px) {
+      .st-syllabus__title {
+        font-size: 18px; } }
+    .st-syllabus__title:hover {
+      text-decoration: none;
+      color: #121053; }
+    .st-syllabus__title:focus {
+      text-decoration: none; }
+    .st-syllabus__title[aria-expanded="true"]::after {
+      content: '\f068';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      color: #ff6550;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 0; }
+    .st-syllabus__title[aria-expanded="false"]::after {
+      content: '\f067';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 0; }
+
+/*---------------------------------------
+    2.59 Author
+-----------------------------------------*/
+.st-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #f7f7fd;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px; }
+  @media screen and (min-width: 576px) {
+    .st-author {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; } }
+  .st-author__img {
+    width: 200px;
+    min-width: 200px !important;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 40px;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 576px) {
+      .st-author__img {
+        margin-bottom: 0; } }
+    .st-author__img--sm {
+      width: 80px !important;
+      min-width: 80px !important;
+      height: 80px !important; }
+
+/*---------------------------------------
+    2.60 Star
+-----------------------------------------*/
+.st-star {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .st-star__ico {
+    color: #ff6550; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -23680,6 +23825,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-mt-50 {
   margin-top: 50px; }
 
+.t-mt-60 {
+  margin-top: 60px; }
+
 .t-mb-5 {
   margin-bottom: 5px; }
 
@@ -23713,6 +23861,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*---------------------------------------
     3.4 Padding
 -----------------------------------------*/
+.t-p-40 {
+  padding: 40px; }
+
 .t-pt-10 {
   padding-top: 10px; }
 
