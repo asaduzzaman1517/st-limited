@@ -2,6 +2,49 @@
 	"use strict";
 
 	$(document).ready(function () {
+		/*----------------------
+            Feedback Slider
+		-----------------------*/
+		var feedFor = $(".st-feed-for");
+		var feedNav = $(".st-feed-nav");
+		if (feedFor.length) {
+			feedFor.slick({
+				mobileFirst: true,
+				slidesToShow: 1,
+				slideToScroll: 1,
+				arrows: false,
+				asNavFor: feedNav,
+				fade: true
+			});
+		}
+		if (feedNav.length) {
+			feedNav.slick({
+				mobileFirst: true,
+				slidesToShow: 1,
+				slideToScroll: 1,
+				asNavFor: feedFor,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 767,
+						settings: {
+							arrows: true,
+							prevArrow:
+								'<i class="fas fa-arrow-left feed-arrow feed-arrow-prev"></i>',
+							nextArrow:
+								'<i class="fas fa-arrow-right feed-arrow feed-arrow-next"></i>'
+						}
+					}
+				]
+			});
+		}
+		/*----------------------
+            Nice Select
+		-----------------------*/
+		var select = $('select');
+		if(select.length) {
+			select.niceSelect();
+		}
 		/**-----------------------------
 		 *  Culture Image Popup
 		 * ---------------------------*/

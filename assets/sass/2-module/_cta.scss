@@ -20,3 +20,55 @@
         }
     }
 }
+.st-cta {
+    position: relative;
+    &__wrapper {
+        background: url(../img/cta-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include xl-screen {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+    &-form {
+        &__group {
+            display: flex;
+            background: $custom-34;
+        }
+        &__label {
+            padding-left: 30px;
+            margin-bottom: 0;
+            color: #fff;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
+            &:hover {
+                cursor: text;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 24px;
+                line-height: 1;
+            }
+        }
+        &__input {
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background: transparent;
+            border: transparent;
+            color: $white;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: $white;
+            }
+        }
+    }
+}

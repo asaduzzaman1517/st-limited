@@ -10,6 +10,17 @@
         text-decoration: none;
     }
 }
+.t-link-default {
+    color: $heading-text;
+    transition: all .3s ease;
+    &:hover {
+        color: $secondary;
+        text-decoration: none;
+    }
+}
 .t-text-primary {
     color: $secondary;
+}
+.t-blur {
+    opacity: .5;
 }

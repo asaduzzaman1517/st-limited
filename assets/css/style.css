@@ -13590,8 +13590,8 @@ img.mfp-img {
   font-family: inherit;
   font-size: 14px;
   font-weight: normal;
-  height: 42px;
-  line-height: 40px;
+  height: 46px;
+  line-height: 46px;
   outline: none;
   padding-left: 18px;
   padding-right: 30px;
@@ -22433,6 +22433,55 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         padding-left: 50px;
         padding-right: 50px; } }
 
+.st-cta {
+  position: relative; }
+  .st-cta__wrapper {
+    background: url(../img/cta-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media screen and (min-width: 1200px) {
+      .st-cta__wrapper {
+        padding-left: 80px;
+        padding-right: 80px; } }
+  .st-cta-form__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #0434d1; }
+  .st-cta-form__label {
+    padding-left: 30px;
+    margin-bottom: 0;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px; }
+    .st-cta-form__label:hover {
+      cursor: text; }
+    .st-cta-form__label span {
+      display: inline-block;
+      font-size: 24px;
+      line-height: 1; }
+  .st-cta-form__input {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
+    border: transparent;
+    color: #fff; }
+    .st-cta-form__input:focus {
+      outline: none; }
+    .st-cta-form__input::-webkit-input-placeholder {
+      color: #fff; }
+    .st-cta-form__input:-ms-input-placeholder {
+      color: #fff; }
+    .st-cta-form__input::-ms-input-placeholder {
+      color: #fff; }
+    .st-cta-form__input::placeholder {
+      color: #fff; }
+
 /*---------------------------------------
     2.30 Banner
 -----------------------------------------*/
@@ -23755,6 +23804,135 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     color: #ff6550; }
 
 /*---------------------------------------
+    2.61 Card
+-----------------------------------------*/
+.st-card {
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .st-card:hover {
+    -webkit-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  .st-card__link {
+    color: #121053; }
+    .st-card__link:hover {
+      color: #121053;
+      text-decoration: none; }
+  .st-card__title {
+    margin-top: 0; }
+  .st-card__body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media screen and (min-width: 768px) {
+      .st-card__body {
+        padding-left: 30px;
+        padding-right: 30px; } }
+  .st-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+/*---------------------------------------
+    2.62 All course section
+-----------------------------------------*/
+.st-all-course {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/course-bg.png);
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .st-all-course__parallax {
+    position: absolute;
+    top: 100px;
+    left: 144px; }
+  .st-all-course__an-1 {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    -webkit-animation: animateTwo 16s linear infinite;
+    animation: animateTwo 16s linear infinite; }
+  .st-all-course__an-2 {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    -webkit-animation: animateFour 8s linear infinite;
+    animation: animateFour 8s linear infinite; }
+  .st-all-course__an-3 {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    -webkit-animation: animateOne 8s linear infinite;
+    animation: animateOne 8s linear infinite; }
+
+/*---------------------------------------
+    2.63 FeedBack
+-----------------------------------------*/
+.st-feed {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7fd), to(#fff));
+  background-image: -webkit-linear-gradient(#f7f7fd, #fff);
+  background-image: -o-linear-gradient(#f7f7fd, #fff);
+  background-image: linear-gradient(#f7f7fd, #fff); }
+  .st-feed-nav__item:focus {
+    outline: none !important; }
+  .st-feed-nav__author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px; }
+    .st-feed-nav__author-img {
+      width: 55px;
+      min-width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center; }
+    .st-feed-nav__author-designation {
+      font-size: 14px;
+      line-height: 1; }
+  .st-feed-nav .feed-arrow {
+    position: absolute;
+    top: -60px;
+    padding: 14px;
+    border: 1px solid #121053;
+    border-radius: 3px; }
+    @media screen and (min-width: 768px) {
+      .st-feed-nav .feed-arrow {
+        top: -120px; } }
+    @media screen and (min-width: 992px) {
+      .st-feed-nav .feed-arrow {
+        top: -150px; } }
+    @media screen and (min-width: 1200px) {
+      .st-feed-nav .feed-arrow {
+        top: -160px; } }
+    .st-feed-nav .feed-arrow:hover {
+      border: 1px transparent;
+      background-color: #ff6550;
+      color: #fff;
+      cursor: pointer; }
+    .st-feed-nav .feed-arrow-next {
+      right: 0; }
+    .st-feed-nav .feed-arrow-prev {
+      right: 60px; }
+  .st-feed-for__item:focus {
+    outline: none !important; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -23801,8 +23979,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     color: #121053;
     text-decoration: none; }
 
+.t-link-default {
+  color: #121053;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .t-link-default:hover {
+    color: #ff6550;
+    text-decoration: none; }
+
 .t-text-primary {
   color: #ff6550; }
+
+.t-blur {
+  opacity: .5; }
 
 /*---------------------------------------
     3.3 Margin
@@ -23888,6 +24078,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 @media screen and (min-width: 1920px) {
   .t-pt-xxl-150 {
     padding-top: 150px; } }
+
+.t-pb-30 {
+  padding-bottom: 30px; }
 
 .t-pb-60 {
   padding-bottom: 60px; }
