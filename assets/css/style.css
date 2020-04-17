@@ -23999,6 +23999,85 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         padding-top: 150px; } }
 
 /*---------------------------------------
+    2.66 Table
+-----------------------------------------*/
+.st-table {
+  margin-bottom: 0;
+  color: #121053;
+  font-weight: 700;
+  text-transform: capitalize;
+  -webkit-box-shadow: 60px 60px 200px rgba(0, 0, 0, 0.08);
+  box-shadow: 60px 60px 200px rgba(0, 0, 0, 0.08);
+  background: #fff; }
+  .st-table .st-btn {
+    color: #ff6550; }
+    .st-table .st-btn:hover {
+      color: #121053; }
+  .st-table thead th {
+    text-align: center;
+    vertical-align: baseline;
+    border-bottom: none; }
+  .st-table td {
+    text-align: center;
+    vertical-align: baseline; }
+  .st-table__active {
+    -webkit-box-shadow: inset 30px 30px 60px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 30px 30px 60px rgba(0, 0, 0, 0.08); }
+  .st-table__min-width {
+    min-width: 120px; }
+    @media screen and (min-width: 768px) {
+      .st-table__min-width {
+        min-width: auto; } }
+  .st-table__bg {
+    -webkit-box-shadow: 60px 60px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 60px 60px 100px rgba(0, 0, 0, 0.1); }
+
+/*---------------------------------------
+    2.67 workshop
+-----------------------------------------*/
+.st-workshop {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/round-shape.png);
+  background-size: initial;
+  background-position: left 150px;
+  background-repeat: no-repeat;
+  z-index: 0; }
+  .st-workshop__parallax {
+    position: absolute;
+    top: 100px;
+    right: 144px; }
+  .st-workshop__an-1 {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    -webkit-animation: animateFour 8s linear infinite;
+    animation: animateFour 8s linear infinite; }
+  .st-workshop__an-2 {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    -webkit-animation: animateOne 8s linear infinite;
+    animation: animateOne 8s linear infinite; }
+
+/*---------------------------------------
+    2.68 Event date
+-----------------------------------------*/
+.st-event-date {
+  text-align: center; }
+  .st-event-date__day {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    color: #121053;
+    line-height: 1.15; }
+  .st-event-date__month {
+    font-size: 18px;
+    font-weight: 500;
+    color: #121053;
+    text-transform: capitalize; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
