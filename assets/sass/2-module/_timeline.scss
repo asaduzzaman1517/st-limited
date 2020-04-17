@@ -1,0 +1,79 @@
+.timeline {
+    @include md-screen {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include xl-screen {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__top {
+        margin-bottom: 30px;
+        &--left {
+            @include xl-screen {
+                margin-right: 100px;
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background: $secondary;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 50%;
+                    right: -80px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &--right {
+            @include xl-screen {
+                margin-left: 100px;
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background: $custom-44;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 50%;
+                    left: -70px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &__date {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    &__place {
+        font-size: 14px;
+        color: $text-icon;
+        text-transform: capitalize;
+    }
+    &__body {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 0 5px 15px rgba($black, .2);
+        @include md-screen {
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+        }
+    }
+    &__content {
+        margin-top: 30px;
+        @include md-screen {
+            margin-top: 0;
+        }
+    }
+    &__title {
+        margin-top: 10px;
+    }
+}

@@ -43,6 +43,11 @@
     margin-bottom: 60px;
 }
 //Margin Right
+.t-md-mr-30 {
+    @include md-screen {
+        margin-right: 30px;
+    }
+}
 .t-mr-15 {
     margin-right: 15px;
 }
