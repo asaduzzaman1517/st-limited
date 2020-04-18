@@ -1,0 +1,22 @@
+.parallax {
+    position: absolute;
+    &-top-0 {
+        top: 0;
+    }
+    &-top {
+        top: 100px;
+    }
+    &-bottom {
+        bottom: 100px;
+    }
+    &-right {
+        right: 0;
+    }
+    &-left {
+        left: 0;
+    }
+    &-center {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

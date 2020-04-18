@@ -1,0 +1,16 @@
+.feat-img {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/feat-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    &--alt {
+        width: 100%;
+    height: 600px;
+    background-image: url(../img/feat-bg-alt.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+}

@@ -23535,15 +23535,18 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .project-card:hover {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
-    .project-card:hover::before {
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0); }
-  .project-card::before {
-    content: '\f055';
-    position: absolute;
+    .project-card:hover .project-card__link {
+      opacity: 1;
+      text-decoration: none;
+      color: #fff; }
+  .project-card__link {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -23553,10 +23556,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
     background: rgba(255, 101, 80, 0.7);
+    opacity: 0;
     font-family: "Line Awesome Free";
     font-size: 60px;
     line-height: 1;
@@ -23566,8 +23567,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -o-transition: all .3s ease;
     transition: all .3s ease;
     cursor: pointer; }
-  .project-card__link {
-    display: block; }
 
 /*---------------------------------------
     2.55 Checkbox
@@ -24170,6 +24169,109 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   margin-top: 10px; }
 
 /*---------------------------------------
+    2.70 Parallax
+-----------------------------------------*/
+.parallax {
+  position: absolute; }
+  .parallax-top-0 {
+    top: 0; }
+  .parallax-top {
+    top: 100px; }
+  .parallax-bottom {
+    bottom: 100px; }
+  .parallax-right {
+    right: 0; }
+  .parallax-left {
+    left: 0; }
+  .parallax-center {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+/*---------------------------------------
+    2.71 Proteam section
+-----------------------------------------*/
+.pro-team-section {
+  background-image: url(../img/team-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/*---------------------------------------
+    2.72 Life image
+-----------------------------------------*/
+.life-img {
+  position: absolute; }
+  .life-img--lg {
+    width: 600px; }
+  .life-img--sm {
+    width: 150px; }
+  .life-img__1 {
+    left: 50%;
+    bottom: -150px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .life-img__2 {
+    bottom: 50px;
+    opacity: .5; }
+    @media screen and (min-width: 1920px) {
+      .life-img__2 {
+        left: 100px; } }
+  .life-img__3 {
+    bottom: 50px;
+    left: 200px; }
+    @media screen and (min-width: 1920px) {
+      .life-img__3 {
+        left: 400px; } }
+  .life-img__4 {
+    bottom: 200px;
+    left: 100px; }
+    @media screen and (min-width: 1920px) {
+      .life-img__4 {
+        bottom: 250px;
+        left: 250px; } }
+  .life-img__5 {
+    bottom: 50px;
+    right: 0;
+    opacity: .5; }
+    @media screen and (min-width: 1920px) {
+      .life-img__5 {
+        right: 100px; } }
+  .life-img__6 {
+    bottom: 50px;
+    right: 200px; }
+    @media screen and (min-width: 1920px) {
+      .life-img__6 {
+        right: 400px; } }
+  .life-img__7 {
+    bottom: 200px;
+    right: 100px; }
+    @media screen and (min-width: 1920px) {
+      .life-img__7 {
+        right: 250px;
+        bottom: 250px; } }
+
+/*---------------------------------------
+    2.73 Feat Image
+-----------------------------------------*/
+.feat-img {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/feat-bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .feat-img--alt {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/feat-bg-alt.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -24317,8 +24419,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding-top: 120px; }
 
 @media screen and (min-width: 1920px) {
-  .t-pt-xxl-150 {
-    padding-top: 150px; } }
+  .t-pt-xxl-200 {
+    padding-top: 200px; } }
+
+@media screen and (min-width: 1200px) {
+  .t-pt-xl-250 {
+    padding-top: 250px; } }
 
 .t-pb-30 {
   padding-bottom: 30px; }

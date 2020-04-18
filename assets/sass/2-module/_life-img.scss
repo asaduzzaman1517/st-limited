@@ -1,0 +1,61 @@
+.life-img {
+    position: absolute;
+    &--lg {
+        width: 600px;
+    }
+    &--sm {
+        width: 150px;
+    }
+    &__1 {
+        left: 50%;
+        bottom: -150px;
+        
+        transform: translateX(-50%);
+    }
+    &__2 {
+        bottom: 50px;
+        opacity: .5;
+        @include xxl-screen {
+            left: 100px;
+        }
+    }
+    &__3 {
+        bottom: 50px;
+        left: 200px;
+        
+        @include xxl-screen {
+            left: 400px;
+        }
+    }
+    &__4 {
+        bottom: 200px;
+        left: 100px;
+        @include xxl-screen {
+            bottom: 250px;
+            left: 250px;
+        }
+    }
+    &__5 {
+        bottom: 50px;
+        right: 0;
+        opacity: .5;
+        @include xxl-screen {
+            right: 100px;
+        }
+    }
+    &__6 {
+        bottom: 50px;
+        right: 200px;
+        @include xxl-screen {
+            right: 400px;
+        }
+    }
+    &__7 {
+        bottom: 200px;
+        right: 100px;
+        @include xxl-screen {
+            right: 250px;
+            bottom: 250px;
+        }
+    }
+}

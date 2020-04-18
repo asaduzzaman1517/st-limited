@@ -24,9 +24,14 @@
 .t-pt-120 {
     padding-top: 120px;
 }
-.t-pt-xxl-150 {
+.t-pt-xxl-200 {
     @include xxl-screen {
-        padding-top: 150px;
+        padding-top: 200px;
+    }
+}
+.t-pt-xl-250 {
+    @include xl-screen {
+        padding-top: 250px;
     }
 }
 //Padding Bottom

@@ -5,20 +5,26 @@
     
     &:hover {
         box-shadow: 0 5px 10px rgba($black, .15);
-        &::before {
-            transform: translateY(0);
+        .project-card__link {
+            opacity: 1;
+            text-decoration: none;
+            color: $white;
         }
     }
-    &::before {
-        content: '\f055';
-        position: absolute;
+
+    &__link {
         width: 100%;
         height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateY(100%);
         background: rgba($secondary, .7);
+        opacity: 0;
         font-family: $line-icon-free;
         font-size: 60px;
         line-height: 1;
@@ -26,9 +32,5 @@
         font-weight: 900;
         transition: all .3s ease;
         cursor: pointer;
-    }
-
-    &__link {
-        display: block;
     }
 }
