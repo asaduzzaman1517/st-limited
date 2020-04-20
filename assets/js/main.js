@@ -3,6 +3,26 @@
 
 	$(document).ready(function () {
 		/*----------------------
+            Apply Popup
+        -----------------------*/
+		var notice = $(".job-notice");
+		var apply = $(".apply-now");
+
+		$(document).on("click", ".job-notice", function(e) {
+			e.preventDefault();
+			if(notice.length) {
+				notice.removeClass("active");
+			}
+			
+			
+		});
+		$(document).on("click", ".apply-now", function(e) {
+			e.preventDefault();
+			if(notice.length) {
+				notice.addClass("active");
+			}
+		});
+		/*----------------------
             Feedback Slider
 		-----------------------*/
 		var feedFor = $(".st-feed-for");

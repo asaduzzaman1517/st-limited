@@ -24278,6 +24278,62 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   border: 20px solid rgba(0, 38, 163, 0.5); }
 
 /*---------------------------------------
+    2.75 Job Notice
+-----------------------------------------*/
+.job-notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .job-notice:hover {
+    cursor: crosshair; }
+  .job-notice.active {
+    z-index: 99999;
+    opacity: 1; }
+  .job-notice__container {
+    height: 100%; }
+  .job-notice__content {
+    width: 100%;
+    height: 500px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #fff;
+    overflow-y: scroll; }
+    .job-notice__content:hover {
+      cursor: auto; }
+    @media screen and (min-width: 768px) {
+      .job-notice__content {
+        height: 700px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px; } }
+    @media screen and (min-width: 1200px) {
+      .job-notice__content {
+        height: 900px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        border-radius: 5px;
+        border-top: 5px solid #ff68c2;
+        border-bottom: 5px solid #ff68c2; } }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -24443,5 +24499,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-pb-120 {
   padding-bottom: 120px; }
+
+.t-pl-20 {
+  padding-left: 20px; }
 
 /*# sourceMappingURL=style.css.map */
