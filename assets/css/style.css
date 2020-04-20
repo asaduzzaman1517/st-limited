@@ -24334,6 +24334,15 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         border-bottom: 5px solid #ff68c2; } }
 
 /*---------------------------------------
+    2.76 Fun Fact
+-----------------------------------------*/
+.fun-fact-section {
+  background-image: url(../img/ff-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+/*---------------------------------------
     0.3 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
