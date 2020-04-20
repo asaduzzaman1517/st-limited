@@ -11,4 +11,14 @@
             width: 70%;
         }
     }
+    &__height {
+        height: calc(100% - 96px);
+        @include lg-screen {
+            height: calc(100% - 108px);
+        }
+    }
+    &__center {
+        height: 100%;
+        transform: translateY(-50%);
+    }
 }
