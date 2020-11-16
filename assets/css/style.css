@@ -20796,9 +20796,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     transform: translateX(-50%); }
   .st_header__img {
     position: absolute;
-    top: 80px;
+    top: 50%;
     right: 40px;
-    width: 650px; }
+    width: 650px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
     @media screen and (min-width: 1366px) {
       .st_header__img {
         width: 700px; } }
@@ -20813,9 +20816,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         width: 890px; } }
     @media screen and (min-width: 1920px) {
       .st_header__img {
-        width: 950px;
-        top: 60px;
-        right: 80px; } }
+        width: 950px; } }
 
 /*---------------------------------------
     2.4 Menu Bar
@@ -21579,10 +21580,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       height: calc(100% - 108px); } }
 
 .st-hero__center {
-  height: 100%;
-  -webkit-transform: translateY();
-  -ms-transform: translateY();
-  transform: translateY(); }
+  height: 100%; }
 
 /*---------------------------------------
     2.13 Footer

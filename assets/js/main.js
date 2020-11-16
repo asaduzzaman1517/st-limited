@@ -346,13 +346,4 @@ window.onload = function () {
     ------------------*/
 	var preLoder = $("#preloader");
 	preLoder.fadeOut(1000);
-
-	lax.setup(); // init
-
-	const updateLax = () => {
-		lax.update(window.scrollY);
-		window.requestAnimationFrame(updateLax);
-	};
-
-	window.requestAnimationFrame(updateLax);
 };
