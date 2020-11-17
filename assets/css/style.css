@@ -20811,12 +20811,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1600px) {
       .st_header__img {
         width: 850px; } }
-    @media screen and (min-width: 1680px) {
-      .st_header__img {
-        width: 890px; } }
-    @media screen and (min-width: 1920px) {
-      .st_header__img {
-        width: 950px; } }
 
 /*---------------------------------------
     2.4 Menu Bar
@@ -21039,7 +21033,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
-        font-family: "Lato", sans-serif; }
+        font-family: "Lato", sans-serif;
+        z-index: 100; }
         @media screen and (min-width: 768px) {
           .st_nav--primary li a {
             font-size: 24px; } }
@@ -21081,7 +21076,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1200px) {
       .menu-item-has-children .sub-menu {
         width: 950px;
-        left: -200%; } }
+        left: 0; } }
     .menu-item-has-children .sub-menu li {
       margin-bottom: 0;
       width: 100%;
@@ -21136,17 +21131,23 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       .menu-item-has-children:hover > .sub-menu {
         width: 950px;
         max-width: 950px;
-        left: -200%; } }
+        left: 0; } }
     .menu-item-has-children:hover > .sub-menu li {
       visibility: visible; }
   .menu-item-has-children:hover > .st-sub-menu {
+    display: block;
     position: relative;
     visibility: visible;
     opacity: 1;
-    z-index: 9999; }
+    z-index: 99; }
     @media screen and (min-width: 992px) {
       .menu-item-has-children:hover > .st-sub-menu {
         position: absolute; } }
+  @media screen and (min-width: 992px) {
+    .menu-item-has-children:hover > .st-mega-menu-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   .menu-item-has-children li:hover > .sub-menu {
     height: auto;
     visibility: visible;
@@ -21208,6 +21209,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   list-style: none;
   border-radius: 5px;
   background: #fff;
+  display: none;
   opacity: 0;
   visibility: none;
   z-index: -1;
@@ -21262,9 +21264,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       padding-right: 20px; } }
   @media screen and (min-width: 992px) {
     .st-mega-menu-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: none;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       position: relative;
@@ -22510,7 +22510,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     text-transform: capitalize;
     z-index: 1; }
   .st-banner__content {
-    padding-top: 60px;
+    padding-top: 200px;
     padding-bottom: 200px; }
 
 /*---------------------------------------
@@ -24351,6 +24351,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+
+/*---------------------------------------
+    2.77 Banner Header
+-----------------------------------------*/
+.st-banner-header {
+  position: relative; }
+  .st-banner-header__float {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 9999; }
 
 /*---------------------------------------
     0.3 Theme Style

@@ -15,7 +15,7 @@
     
     &-container {
         @include lg-screen {
-            display: flex;
+            display: none;
             flex-wrap: wrap;
             position: relative;
             overflow: hidden;
