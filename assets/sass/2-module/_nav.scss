@@ -195,9 +195,11 @@
                 border-bottom: 15px solid white;
                 opacity: 0;
                 visibility: hidden;
+                display: none;
                 transition: all .3s ease;
             }
             &:hover::before {
+                display: block;
                 opacity: 1;
                 visibility: visible;
             }

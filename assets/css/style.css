@@ -21187,10 +21187,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       border-bottom: 15px solid white;
       opacity: 0;
       visibility: hidden;
+      display: none;
       -webkit-transition: all .3s ease;
       -o-transition: all .3s ease;
       transition: all .3s ease; }
     .menu-item-has-children:hover::before {
+      display: block;
       opacity: 1;
       visibility: visible; } }
 
